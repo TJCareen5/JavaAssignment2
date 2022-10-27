@@ -20,14 +20,14 @@ public class FibonacciCalculator {
         int a = 0;
         int b = 1;
         int f = 0;
-        /** loop until the f variable exceeds the number */
+        /** loop until f exceeds the number */
         while (f < number) {
             /** add a and b, store the result in f */
             f = a + b;
             a = b;
             b = f;
         }
-        /** if f is equal to number, then number is a fibonacci number */
+        /** if f is equal to the number, then the number is a fibonacci number */
         return f == number;
     }
 
@@ -38,7 +38,7 @@ public class FibonacciCalculator {
         int f = 0;
         /** loop for number times */
         for (int i = 0; i < number; i++) {
-            /** add a and b, store the result in f */
+            /** add a and b together and store the value in f */
             f = a + b;
             a = b;
             b = f;
